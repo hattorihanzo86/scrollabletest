@@ -1,0 +1,50 @@
+.container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    overflow-x: scroll; /* Enable native scrolling */
+    -ms-overflow-style: none; /* Hide scrollbar on IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+  }
+  
+  .list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on Chrome/Safari */
+  }
+  
+  .list li {
+    padding: 10px;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    border-radius: 50%;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    right: 0;
+  }
+  
